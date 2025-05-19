@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wohlfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Wohlfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="work.html">Work</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2 class="fade-scroll">Contact</h2>
+
+        <p class="text-center mb-4">For inquiries, please contact me below:</p>
+        <p class="text-center mb-4">melanieawohl@gmail.com:</p>
+
+        <!-- Replace YOUR_FORMSPREE_ENDPOINT with your actual endpoint -->
+        <form action="https://formspree.io/f/xvgkyglg" method="POST" class="contact-form">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Inquiry:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 Wohlfolio</p>
+    </footer>
+</body>
+</html>

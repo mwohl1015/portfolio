@@ -1,0 +1,546 @@
+/* Import a stylish Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: red;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: red;
+    margin: 0 2rem;
+}
+
+/* Adjusted padding under the navigation bar */
+main {
+    padding: 3rem 2rem 4rem 2rem; /* Reduced the padding-top to bring content closer */
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 6rem;
+    color: red;
+    margin-bottom: 3rem;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Content paragraph */
+main p {
+    margin-top: 4rem;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Container for background and experience section */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+/* Background and experience section */
+.background-experience {
+    width: 48%;
+    padding: 1rem;
+    background-color: #fff;
+    color: #000;
+}
+
+.background-experience h3 {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.background-experience p {
+    color: #000;
+}
+
+/* Skills section */
+.skills {
+    width: 48%;
+    padding: 1rem;
+    background-color: #fff;
+    color: #000;
+    margin-left: auto;
+}
+
+.skills h4 {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.skills ul {
+    list-style: none;
+    padding-left: 13rem;
+}
+
+.skills ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Centered CV container */
+.cv-item {
+    display: flex;
+    justify-content: center; /* Center align the content horizontally */
+    align-items: center;
+    margin-top: 8rem;
+    text-align: center; /* Ensures the text in the cv section is centered */
+}
+
+.cv {
+    margin-inline: 1rem;
+}
+
+.cv img {
+    width: 200px;
+    border: 2px solid red;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cv img:hover {
+    transform: scale(1.05);
+}
+
+.cv p {
+    color: red;
+    margin-top: 0.5rem;
+    font-weight: bold;
+
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* Center align and increase size for the location subtitle */
+.location-subtitle {
+    text-align: center; /* Center align the text */
+    font-size: 1rem; /* Increase the font size (adjust as needed) */
+    margin-top: 0.01rem; /* Optional: add space above */
+}
+
+
+
+/* Background and experience section */
+.background-experience h3, .skills h4 {
+    text-align: center; /* Center align the headers */
+    font-size: 2rem; /* Make the header slightly larger */
+    margin-bottom: 1rem; /* Reduce the space between the header and the content */
+}
+
+/* Add consistent padding between the content of each section */
+.background-experience p, .skills ul {
+    padding-top: 1rem; /* Add consistent padding to the top of the content */
+    padding-bottom: 1rem; /* Add consistent padding to the bottom of the content */
+}
+
+/* Ensure the padding under background and experience content matches the skills section */
+.background-experience {
+    padding-bottom: 2rem; /* Ensure the padding is consistent between sections */
+}
+
+/* Optional: Adjusting margin for better spacing */
+.background-experience p {
+    margin-bottom: 1rem; /* Adjust the margin under the paragraph for consistency */
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem; /* Increased the top margin to add more space */
+}
+
+
+/* Background and experience section */
+.background-experience h3, .skills h4 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem; /* Reduced margin-bottom to decrease space */
+}
+
+/* Adjust the margin for the paragraph in background and experience section */
+.background-experience p {
+    margin-top: 0.5rem; /* Reduced the margin-top to bring the paragraph closer to the header */
+    margin-bottom: 1rem;
+}
+
+/* Skills section paragraph margin */
+.skills ul {
+    margin-top: 0.5rem; /* Adjusted margin-top here too if needed */
+}
+
+
+/* Skills section */
+.skills ul {
+    list-style: none;
+    padding-left: 14rem;
+    padding-bottom: 0.5rem; /* Reduced padding-bottom to decrease space */
+}
+
+/* Skills section paragraph margin */
+.skills p {
+    margin-top: 0.5rem; /* Reduced margin-top to bring the paragraph closer to the list */
+}
+
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: red;
+    margin: 0 2rem;
+}
+/* Sections */
+section {
+    margin-bottom: 40px;
+
+}
+
+/* Clickable Image Links */
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.item {
+    width: 250px;
+    text-align: center;
+}
+
+.item a {
+    display: block;
+    text-decoration: none;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(216, 179, 255, 0.5);
+}
+
+.item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Contact Page */
+/* Contact Form Container */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 90%;
+    margin: 20px auto; /* Centers the form */
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    box-sizing: border-box; /* Prevents padding overflow */
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+/* Form Labels */
+.contact-form label {
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333; /* Slightly darker color for better readability */
+}
+
+/* Input and Textarea Fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Softer corners */
+    font-size: 16px;
+    background-color: #f9f9f9; /* Light background for inputs */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Textarea Specific Styling */
+.contact-form textarea {
+    height: 150px;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Focus State for Input Fields */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #d8b3ff; /* Highlight on focus */
+    box-shadow: 0 0 5px rgba(216, 179, 255, 0.5); /* Soft glow effect */
+    outline: none; /* Removes default outline */
+}
+
+/* Button Styling */
+.contact-form button {
+    margin-top: 20px;
+    padding: 14px;
+    background-color: #ff4d4d; /* Red color */
+    color: #fff; /* White text for contrast */
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    font-size: 18px;
+}
+
+/* Button Hover State */
+.contact-form button:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+    transform: translateY(-2px); /* Subtle lifting effect */
+}
+
+/* Button Focused State */
+.contact-form button:focus {
+    outline: none; /* Removes default outline */
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.3); /* Soft glow on focus */
+}
+
+
+/* Form Success and Error Messages */
+.contact-form .form-message {
+    text-align: center;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+}
+
+/* Success Message */
+.contact-form .form-message.success {
+    background-color: #4CAF50; /* Green for success */
+}
+
+/* Error Message */
+.contact-form .form-message.error {
+    background-color: #FF0000; /* Red for errors */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+        display: block;
+    }
+
+    .item-container {
+        justify-content: center;
+    }
+}
+
+/* Work Section */
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.work-item {
+    background-color: black;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.work-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.work-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.work-item h3 {
+    color: red;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.work-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Blog Section */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.blog-post {
+    background-color: black;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.blog-post:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.blog-post img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.blog-post h3 {
+    color: red;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/* Work Section Heading */
+#work h2 {
+    color: red; /* Change text color to red */
+    font-size: 3rem; /* Increase the font size */
+    text-align: center; /* Center align the heading */
+    border: none; /* Remove the underline (no border) */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+/* Blog Section Heading */
+#blog h2 {
+    color: red; /* Change text color to red */
+    font-size: 3rem; /* Increase the font size */
+    text-align: center; /* Center align the heading */
+    border: none; /* Remove the underline (no border) */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+/* Contact Section Heading */
+#contact h2 {
+    color: red; /* Change text color to red */
+    font-size: 3rem; /* Increase the font size */
+    text-align: center; /* Center align the heading */
+    border: none; /* Remove the underline (no border) */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+/* Fading Headers on Scroll */
+.fade-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
